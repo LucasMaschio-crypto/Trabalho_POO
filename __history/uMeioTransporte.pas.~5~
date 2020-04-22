@@ -1,0 +1,26 @@
+unit uMeioTransporte;
+
+interface
+
+uses Dialogs;
+
+type
+
+TMeioTransporte = class
+  Modelo : string;
+  Marca : string;
+  Ano : integer;
+  Preco : integer;
+  procedure cadastro;
+end;
+
+implementation
+
+{ TMeioTransporte }
+
+procedure TMeioTransporte.cadastro;
+begin
+  ShowMessage('Cadastro Efetuado do seu ' + Modelo);
+end;
+
+end.

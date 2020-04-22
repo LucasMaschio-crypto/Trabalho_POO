@@ -1,0 +1,46 @@
+unit uVendas;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants,
+  System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, uMeioTransporte, uCarro,
+  uMoto, uCadastroVeiculo;
+
+type
+  TVendas = class(TForm)
+    DescVeiculo: TEdit;
+    PrecoVeiculo: TEdit;
+    Button1: TButton;
+    Label1: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
+    CBPagamento: TComboBox;
+    procedure Button1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    Carro, Moto: TMeioTransporte end;
+
+  var
+    Vendas: TVendas;
+
+implementation
+
+{$R *.dfm}
+
+procedure TVendas.Button1Click(Sender: TObject);
+begin
+  if Carro.Modelo = '' then
+    ShowMessage('Não há Cadastro')
+
+  else if Moto.Modelo <> '' then
+    TMeioTrasnporte.Venda;
+    Carro.Free;
+    Moto.Free;
+
+end;
+
+end.
+

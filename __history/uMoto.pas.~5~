@@ -1,0 +1,23 @@
+unit uMoto;
+
+interface
+
+uses uMeioTransporte;
+
+type
+ TMoto = class(TMeioTransporte)
+ procedure cadastro; override;
+ end;
+
+implementation
+
+uses Dialogs;
+
+{ TCarro }
+
+procedure TMoto.cadastro();
+begin
+ ShowMessage(Modelo + ' foi cadastrado');
+end;
+
+end.

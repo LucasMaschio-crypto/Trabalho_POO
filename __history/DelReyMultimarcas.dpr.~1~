@@ -1,0 +1,18 @@
+program DelReyMultimarcas;
+
+uses
+  Vcl.Forms,
+  uFrmPrincipal in 'uFrmPrincipal.pas' {Form1},
+  uCadastroVeiculo in 'uCadastroVeiculo.pas' {Form2},
+  uVendas in 'uVendas.pas' {Form3};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(TForm2, Form2);
+  Application.CreateForm(TForm3, Form3);
+  Application.Run;
+end.

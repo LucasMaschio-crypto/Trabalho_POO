@@ -1,0 +1,13 @@
+unit uMoto;
+
+interface
+
+uses uMeioTransporte;
+
+type
+ TCarro = class(TMeioTransporte)
+ end;
+
+implementation
+
+end.
